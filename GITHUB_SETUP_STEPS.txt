@@ -1,0 +1,15 @@
+GITHUB PAGES QUICK SETUP
+
+1. Create a new repository on GitHub.
+2. Upload the CONTENTS of this folder, not the ZIP itself.
+3. Go to Settings > Pages.
+4. Set Source to: Deploy from a branch.
+5. Set Branch to: main.
+6. Set Folder to: / root.
+7. Save.
+8. Wait 1-2 minutes for the site link.
+
+Important:
+- index.html must stay in the root.
+- audit/index.html must stay inside the audit folder.
+- meeting-minutes/index.html must stay inside the meeting-minutes folder.

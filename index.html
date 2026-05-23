@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>North 40 Safety Tools</title>
+<meta name="theme-color" content="#08111f">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Safety Tools">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="manifest" href="manifest.webmanifest">
+
+<style>
+:root{
+--bg:#08111f;
+--panel:#111c2e;
+--panel2:#18253a;
+--line:#2c3d59;
+--text:#f8fafc;
+--muted:#cbd5e1;
+--accent:#facc15;
+--blue:#38bdf8;
+}
+
+*{box-sizing:border-box}
+
+body{
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:
+radial-gradient(circle at top left, rgba(56,189,248,.18), transparent 32%),
+radial-gradient(circle at bottom right, rgba(250,204,21,.10), transparent 26%),
+linear-gradient(180deg,#08111f,#0f172a);
+color:var(--text);
+min-height:100vh;
+}
+
+main{
+max-width:1100px;
+margin:auto;
+padding:24px 18px 50px;
+}
+
+.hero{
+text-align:center;
+padding:24px 10px 30px;
+}
+
+.logo{
+width:220px;
+max-width:65vw;
+border-radius:32px;
+background:white;
+padding:10px;
+box-shadow:0 25px 60px rgba(0,0,0,.45);
+}
+
+h1{
+margin:22px 0 10px;
+font-size:clamp(2.3rem,6vw,4rem);
+letter-spacing:.02em;
+}
+
+.subtitle{
+max-width:700px;
+margin:auto;
+font-size:1.05rem;
+line-height:1.5;
+color:var(--muted);
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:22px;
+margin-top:24px;
+}
+
+.card{
+display:block;
+text-decoration:none;
+color:white;
+background:linear-gradient(180deg,var(--panel2),var(--panel));
+border:1px solid var(--line);
+border-radius:28px;
+padding:24px;
+box-shadow:0 20px 45px rgba(0,0,0,.32);
+transition:.18s ease;
+position:relative;
+overflow:hidden;
+}
+
+.card:hover{
+transform:translateY(-4px);
+border-color:#4b6b9b;
+}
+
+.card::after{
+content:"";
+position:absolute;
+top:-40px;
+right:-40px;
+width:120px;
+height:120px;
+background:rgba(250,204,21,.08);
+border-radius:50%;
+}
+
+.icon{
+width:62px;
+height:62px;
+border-radius:18px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:2rem;
+background:rgba(250,204,21,.14);
+color:var(--accent);
+margin-bottom:18px;
+}
+
+.card h2{
+margin:0 0 10px;
+font-size:1.35rem;
+}
+
+.card p{
+margin:0;
+color:var(--muted);
+line-height:1.45;
+font-size:.98rem;
+}
+
+.badge{
+display:inline-block;
+margin-top:18px;
+padding:8px 14px;
+border-radius:999px;
+background:var(--accent);
+color:#111827;
+font-weight:800;
+font-size:.82rem;
+}
+
+.footer{
+text-align:center;
+margin-top:40px;
+color:var(--muted);
+font-size:.9rem;
+}
+
+@media(max-width:700px){
+.logo{width:180px}
+.card{padding:20px}
+}
+</style>
+</head>
+
+<body>
+<main>
+
+<section class="hero">
+<img class="logo" src="logo.png" alt="North 40 Safety Coordinator Logo">
+
+<h1>Safety Tools</h1>
+
+<p class="subtitle">
+Colville safety forms, inspections, meeting documentation, and PDF exports —
+all optimized for iPhone and iPad field use.
+</p>
+</section>
+
+<section class="grid">
+
+<a class="card" href="./audit/">
+<div class="icon">🛡️</div>
+<h2>Monthly Safety Audit</h2>
+<p>
+Building safety audits, pallet racking inspections, first aid cabinet tracking,
+boom lift documentation, and harness inspections.
+</p>
+<span class="badge">Open Audit Tools</span>
+</a>
+
+<a class="card" href="./meeting-minutes/">
+<div class="icon">📝</div>
+<h2>Safety Meeting Minutes</h2>
+<p>
+Complete meeting documentation with clean North 40 PDF export formatting
+ready for print or SafetySTAR submission.
+</p>
+<span class="badge">Open Meeting Minutes</span>
+</a>
+
+</section>
+
+<div class="footer">
+North 40 Safety Coordinator • Colville WA
+</div>
+
+</main>
+</body>
+</html>
